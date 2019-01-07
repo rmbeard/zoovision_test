@@ -1,0 +1,28 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1920.1080@120dpi" x="591" y="445" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1920.1080@120dpi" x="586" y="281" />
+    <location key="#Notifications.0.0.1920.1080@120dpi" x="656" y="163" />
+    <location key="IdeErrosDialog.0.0.1920.1080@120dpi" x="0" y="315" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080@120dpi" x="0" y="81" />
+    <location key="SettingsEditor.0.0.1920.1080@120dpi" x="289" y="70" />
+    <location key="find.popup.0.0.1920.1080@120dpi" x="708" y="159" />
+    <location key="FileChooserDialogImpl.0.0.1920.1080@120dpi" x="519" y="199" />
+    <location key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate.0.0.1920.1080@120dpi" x="605" y="308" />
+    <location key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1.0.0.1920.1080@120dpi" x="260" y="346" />
+    <location key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog.0.0.1920.1080@120dpi" x="103" y="198" />
+    <location key="#com.intellij.fileTypes.FileTypeChooser.0.0.1920.1080@120dpi" x="218" y="221" />
+    <location key="com.intellij.ide.util.TipDialog.111.-900.1600.900" x="490" y="-656" />
+    <size key="GridCell.Tab.0.left.0.0.1920.1080@120dpi" width="900" height="302" />
+    <size key="GridCell.Tab.0.center.0.0.1920.1080@120dpi" width="900" height="302" />
+    <size key="GridCell.Tab.0.right.0.0.1920.1080@120dpi" width="900" height="302" />
+    <size key="GridCell.Tab.0.bottom.0.0.1920.1080@120dpi" width="900" height="302" />
+    <size key="GridCell.Tab.1.left.0.0.1920.1080@120dpi" width="1015" height="377" />
+    <size key="GridCell.Tab.1.center.0.0.1920.1080@120dpi" width="1015" height="377" />
+    <size key="GridCell.Tab.1.right.0.0.1920.1080@120dpi" width="1015" height="377" />
+    <size key="GridCell.Tab.1.bottom.0.0.1920.1080@120dpi" width="1015" height="377" />
+    <size key="find.popup.0.0.1920.1080@120dpi" width="793" height="817" />
+    <size key="SettingsEditor.0.0.1920.1080@120dpi" width="994" height="899" />
+    <size key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.1920.1080@120dpi" width="992" height="874" />
+  </component>
+</application>

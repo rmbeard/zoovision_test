@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+{% extends "template.html" %}
+{% block content %}
+<div class="w3-container">
+    <h1>Zoovision</h1>
+    <div id="pages" class="w3-bar w3-black">
+        <a href="{{ url_for('home') }}" class="w3-bar-item w3-button tablink ">Home</a>
+        <a href="{{ url_for('surveillance') }}" class="w3-bar-item w3-button tablink w3-green">Surveillance</a>
+        <a href="{{ url_for('prediction_analysis') }}" class="w3-bar-item w3-button tablink">Analysis</a>
+        <a href="{{ url_for('survey') }}" class="w3-bar-item w3-button tablink ">Survey</a>
+    </div>
+</div>
+<div class="row">
+    <div class="column side">
+        <h2>Search parameters</h2>
+        <form name="Item_1" method='POST' action="/surveillance">
+            <p>Select virus</p>
+            <select name="virus" method="POST" action="/survey">
+                <option value="{{viruses[0]}}" selected>{{viruses[0]}}</option>
+                {% for virus in viruses[1:] %}
+                <option value="{{virus}}">{{virus}}</option>
+                {% endfor %}
+            </select>
+            <p>Select risk factor</p>
+            <select name="risk_factor" method="POST" action="/surveillance">
+                <option value="{{risk_factors[0]}}" selected>{{risk_factors[0]}}</option>
+                {% for risk_factor in risk_factors[1:] %}
+                <option value="{{risk_factor}}">{{risk_factor}}</option>
+                {% endfor %}
+            </select>
+            <button method="POST" action="/surveillance" type="submit">Query</button>
+        </form>
+    </div>
+    <div class="column middle">
+        <h2>Results</h2>
+        <p>
+            <img src="{{ view }}" width="700">
+        </p>
+    </div>
+    <div class="column side">
+        <h2>Summary</h2>
+        <p>description of cluster classifications and p values</p>
+    </div>
+</div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,42 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="Python 2.7 (geopy)" />
+      <type value="Python SDK" />
+      <version value="Python 2.7.14" />
+      <homePath value="C:\geopy\Scripts\python.exe" />
+      <roots>
+        <classPath>
+          <root type="composite">
+            <root url="file://C:/mapnik/python/2.7/site-packages" type="simple" />
+            <root url="file://C:/geopy/Lib" type="simple" />
+            <root url="file://C:/geopy/Scripts" type="simple" />
+            <root url="file://C:/Python27/Lib" type="simple" />
+            <root url="file://C:/Python27/DLLs" type="simple" />
+            <root url="file://C:/Python27/Lib/lib-tk" type="simple" />
+            <root url="file://C:/geopy/Lib/site-packages" type="simple" />
+            <root url="file://C:/geopy" type="simple" />
+            <root url="file://C:/Python27/Lib/site-packages/osgeo" type="simple" />
+            <root url="file://C:/Python27/Lib/site-packages/requests" type="simple" />
+            <root url="file://C:/Python27/Lib/site-packages/shapely" type="simple" />
+            <root url="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/-1595110572" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2" type="simple" />
+            <root url="file://$APPLICATION_HOME_DIR$/helpers/typeshed/third_party/2and3" type="simple" />
+          </root>
+        </classPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional ASSOCIATED_PROJECT_PATH="C:/geopy">
+        <PATHS_ADDED_BY_USER_ROOT PATH_ADDED_BY_USER="file://C:/Python27/Lib/site-packages/osgeo" />
+        <PATHS_ADDED_BY_USER_ROOT PATH_ADDED_BY_USER="file://C:/geopy" />
+        <PATHS_ADDED_BY_USER_ROOT PATH_ADDED_BY_USER="file://C:/Python27/Lib/site-packages/requests" />
+        <PATHS_ADDED_BY_USER_ROOT PATH_ADDED_BY_USER="file://C:/Python27/Lib/site-packages/shapely" />
+      </additional>
+    </jdk>
+  </component>
+</application>
