@@ -7,3 +7,108 @@ import geopandas as gpd
 import os, time, glob
 -. . -..- - / . -. - .-. -.--
 import geopandas as gdp
+-. . -..- - / . -. - .-. -.--
+# result = adfuller(X)
+df = pd.read_csv('data/weeklydata.csv')
+df.head()
+# simple visualization and plotting
+df.info()
+
+selected_state = "Maine"
+df1 = df['STATE_NAME'] == selected_state
+# print(df1)
+df = df[df1]
+# print(df)
+
+# # Rename columns of df to they have no spaces
+df = df[['WEEKEND', 'PERCENT POSITIVE', '%UNWEIGHTED ILI']]
+# print(df)
+data = np.random.randn(10000)
+# plt.hist(data)
+# # turn month into a datetime data type and make it the index of the dataframe
+# df.WEEKEND = pd.to_datetime(df.WEEKEND)
+# df.set_index('WEEKEND', inplace=True)
+
+# df.plot(figsize=(20,10), linewidth=5, fontsize=20)
+# plt.xlabel('Year', fontsize=20)
+
+# # discover if there are trends or seasonality
+# # common trend identifycation: rolling average
+# this looks to see if we need to test for stationary men and variance
+# # rolling average: for each point that an average of nearby points within a given window
+ppos = df[['PERCENT POSITIVE']]
+# ppos.rolling(10).mean().plot(figsize=(20,10), linewidth=5, fontsize=20)
+# plt.xlabel('Year', fontsize=20);
+
+ili = df[['%UNWEIGHTED ILI']]
+# ili.rolling(10).mean().plot(figsize=(20,10), linewidth=5, fontsize=20)
+# plt.xlabel('YEAR', fontsize=20);
+plt.hist(ili)
+# test for stationary series
+# series = Series.from_csv('international-airline-passengers.csv', header=0)
+# X = series.values
+# X = log(X)
+# print('ADF Statistic: %f' % result[0])
+# print('p-value: %f' % result[1])
+# for key, value in result[4].items():
+# 	print('\t%s: %.3f' % (key, value))
+plt.show()
+-. . -..- - / . -. - .-. -.--
+# Import packages
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+# %matplotlib inline
+# sns.set()
+
+from pandas import Series
+# from statsmodels.tsa.stattools import adfuller
+from numpy import log
+
+# Read in data
+# result = adfuller(X)
+df = pd.read_csv('data/weeklydata.csv')
+df.head()
+# simple visualization and plotting
+df.info()
+
+selected_state = "Maine"
+df1 = df['STATE_NAME'] == selected_state
+# print(df1)
+df = df[df1]
+# print(df)
+
+# # Rename columns of df to they have no spaces
+df = df[['WEEKEND', 'PERCENT POSITIVE', '%UNWEIGHTED ILI']]
+# print(df)
+data = np.random.randn(10000)
+# plt.hist(data)
+# # turn month into a datetime data type and make it the index of the dataframe
+# df.WEEKEND = pd.to_datetime(df.WEEKEND)
+# df.set_index('WEEKEND', inplace=True)
+
+# df.plot(figsize=(20,10), linewidth=5, fontsize=20)
+# plt.xlabel('Year', fontsize=20)
+
+# # discover if there are trends or seasonality
+# # common trend identifycation: rolling average
+# this looks to see if we need to test for stationary men and variance
+# # rolling average: for each point that an average of nearby points within a given window
+ppos = df[['PERCENT POSITIVE']]
+# ppos.rolling(10).mean().plot(figsize=(20,10), linewidth=5, fontsize=20)
+# plt.xlabel('Year', fontsize=20);
+
+ili = df[['%UNWEIGHTED ILI']]
+# ili.rolling(10).mean().plot(figsize=(20,10), linewidth=5, fontsize=20)
+# plt.xlabel('YEAR', fontsize=20);
+plt.hist(ili)
+# test for stationary series
+# series = Series.from_csv('international-airline-passengers.csv', header=0)
+# X = series.values
+# X = log(X)
+# print('ADF Statistic: %f' % result[0])
+# print('p-value: %f' % result[1])
+# for key, value in result[4].items():
+# 	print('\t%s: %.3f' % (key, value))
+plt.show()
